@@ -3,7 +3,7 @@ let elh2 = document.querySelector("h2")
 let ela = document.querySelector("a")
 let lap = document.querySelector("p")
 
-let nombre = prompt("Ingrese su Nombre")
+let nombre = window.prompt("Ingrese su Nombre")
 
 if(!nombre){
     elh2.innerText("Invitado")
@@ -14,4 +14,4 @@ if(!nombre){
 
 elh2.style.textTransform = uppercase
 
-ela.style.color = #E51B3E
+ela.style.color = "#E51B3E"

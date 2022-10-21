@@ -6,17 +6,14 @@ let elBody = document.querySelector("body")
 
 let nombre = prompt("Ingrese su Nombre")
 
-elMain.style.display = "block"
 
-if (confirm("¿Desea colocar un fondo de pantalla?")) {
-    elBody.classList.add("fondo")
-  }
+
 
 if(!nombre){
     elh2.innerText += " Invitado"
 }
     else {
-        elh2.innerHTML += "Nombre"
+        elh2.innerHTML += nombre
     }
 
 elh2.style.textTransform = "uppercase"
@@ -24,10 +21,16 @@ elh2.style.textTransform = "uppercase"
 ela.style.color = "#E51B3E"
 
 
+if (confirm("¿Desea colocar un fondo de pantalla?")) {
+    elBody.classList.add("fondo")
+  }
 
-  for (let i = 0; i > lap.length; i++) {
-    if (lap[i] %2==0){
+  for (let i = 0; i < lap.length; i++) {
+    if (i %2==0){
        lap[i].classList.add("descatadoPar")       
     } 
-        else lap[i].classList.add("destacadoImpar")
+        else {
+            lap[i].classList.add("destacadoImpar")
+}
     }
+    elMain.style.display = "block"
